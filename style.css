@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#navbar-color{
+    background-color: rgba(245,245,245,0.925);
+    border-radius: 10px;
+}
+#logo{
+    color: rgba(23,208,221);
+    font-size: 30px;
+    font-weight: bold;
+}
+.navbar-nav{
+    margin: auto;
+}
+.nav-item{
+    margin-left: 10px;
+}
+.nav-link{
+    color: black;
+    font-weight: bold;
+}
+.nav-link:hover{
+    background-color: rgba(23,208,221);
+    border-radius: 5px;
+    color: black;
+}
+#cantainer-background{
+    height: 95vh;
+    background-image: url(./image/background.jpg);
+    background-size: cover;
+    background-position: 83%;
+    border-radius: 10px;
+}
+.main-content{
+    margin-top: 90px;
+    margin-left: 10px;
+}
+.main-content h5{
+    font-size: 45px;
+}
+.main-content h3{
+    font-size: 50px;
+}
+.main-content h2{
+    font-size: 55px;
+    color: white;
+}
+.btn button{
+    width: 120px;
+    height: 30px;
+    border: none;
+    color: rgba(23,208,221);
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.btn button:hover{
+    background-color: rgba(23,208,221);
+    border: 2px solid black;
+    color: black;
+}
+
+.row{
+    margin-top: 50px;
+}
+.btn1{
+    width: 100%;
+}
+.btn1 button{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-top: 6px;
+    cursor: pointer;
+}
+.btn1 i img{
+    margin-top: 3px;
+}
+.card{
+    box-shadow: 0 2px 5px black;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+.card:hover{
+    transform: translateY(-15px);
+}
+.star{
+    font-size: 20px;
+}
+.checked{
+    color: rgba(255,196,0);
+}
+.banner{
+    width: 100%;
+    height: 55vh;
+    background-image: url(./image/banner.jpg);
+    background-size: cover;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-position: 69%;
+}
+.banner-content{
+    padding-top: 70px;
+    margin-left: 30px;
+}
+.banner-content h1{
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.banner-content p{
+    font-weight: bold;
+}
+#btn button{
+    width: 150px;
+    height: 35px;
+    border: 2px solid black;
+    letter-spacing: 2px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.footer{
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: black;
+}
+.copy{
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    font-weight: bold;
+}
