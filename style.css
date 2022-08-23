@@ -6,10 +6,22 @@
     background-color: rgba(245,245,245,0.925);
     border-radius: 10px;
 }
-#logo{
-    color: rgba(23,208,221);
+#greenlogo{
+    color: rgba(217,255,173);
     font-size: 30px;
     font-weight: bold;
+}
+
+#greenbtn{
+    color: rgba(113,148,51,0.93);
+    background-color: transparent;
+    background-image: none;
+    border-color: rgba(113,148,51,0.93);	
+	
+}
+
+.carousel-control-next, .carousel-control-prev{
+	opacity: 100%;
 }
 .navbar-nav{
     margin: auto;
@@ -17,15 +29,21 @@
 .nav-item{
     margin-left: 10px;
 }
+
 .nav-link{
     color: black;
-    font-weight: bold;
+	transition: 0.5s;
 }
+
 .nav-link:hover{
-    background-color: rgba(23,208,221);
-    border-radius: 5px;
-    color: black;
+    letter-spacing: 0.2em;
 }
+
+nav li a:hover{
+  color: #7B7B7B;
+}
+
+
 #cantainer-background{
     height: 95vh;
     background-image: url(./image/background.jpg);
@@ -47,16 +65,7 @@
     font-size: 55px;
     color: white;
 }
-.btn button{
-    width: 120px;
-    height: 30px;
-    border: none;
-    color: rgba(23,208,221);
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
 
-}
 .btn button:hover{
     background-color: rgba(23,208,221);
     border: 2px solid black;
