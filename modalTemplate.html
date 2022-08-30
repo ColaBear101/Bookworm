@@ -19,7 +19,7 @@
                               <!-- BS CSS ICON 5.2.X -->  
   
 					         	<!-- Import css -->	
-  <link rel="stylesheet" href="#">
+  <link rel="stylesheet" href="style.css">
   					            <!-- Import css -->	
   
                                   <!--Font Awesome-->	  
@@ -36,8 +36,12 @@
 <body>
 			<!-- Button trigger modal -->
 	 <div class="position-absolute top-50 start-50 translate-middle">
-			<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  				Launch demo modal
+			<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+				<div class="card border-0 bg-light mb-2" id="cardhover">
+					<div class="card-body">
+					  <img src="image/trendingbook3.png" class="img-fluid" alt="...">
+					</div>
+				  </div>
 			</button>
 	</div>
 
@@ -50,8 +54,9 @@
                       <h5 class="modal-title" id="exampleModalLabel">
 						<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
   							<ol class="breadcrumb px-3 pt-3">
-    							<li class="breadcrumb-item"><a href="#">Home</a></li>
-    							<li class="breadcrumb-item active" aria-current="page">Library</li>
+    							<li class="breadcrumb-item">Category</li>
+								<li class="breadcrumb-item">Book</li>
+    							<li class="breadcrumb-item active" aria-current="page">Nudity</li>
   							</ol>
 						</nav>
 					  </h5>
@@ -60,25 +65,40 @@
 					  
                     <div class="modal-body">
 						<div class="row">
-							<div class="col-xl-5 col-sm-1">
-								<img src="https://images-se-ed.com/ws/Storage/Originals/978019/433/9780194331364L.jpg" class="img-thumbnail" alt="...">
+							<div class="col-xl-4 col-md-5 col-sm-1 text-center">
+								<img src="image/trendingbook3.png" class="img-thumbnail" alt="...">
 							</div>	
 							
-							<div class="col-xl-7 col-sm-1">
+							<div class="col-xl-8 col-md-7 col-sm-1">
 							<div class="container pt-2">
-								<div class="card border-secondary w-100">
-  									<div class="card-header"><h4>รายละเอียดของหนังสือ</h4></div>
-  										<div class="card-body text-secondary">
-											<div class="row">
-    											<p class="card-text overflow-auto">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-											</div>
-  									</div>
+								<div class="row">
+										<b class="h1">The Satanic Verses</b><i>Salman Rushdie (Author)</i>
+								</div>										
+
+								<div class="row w-100">
+									<p class="h4 pt-4">Description</p>
+									<p class="overflow-auto mx-1">#1 NEW YORK TIMES BESTSELLER - "[A] torrent of endlessly inventive prose, by turns comic and enraged, embracing life in all its contradictions. In this spectacular novel, verbal pyrotechnics barely outshine its psychological truths."--Newsday
+										Winner of the Whitbread Prize</p>
+								</div>
+
+								<div class="container">
+									<span class="next" onclick="nextNum()"></span>
+									<span class="next" onclick="prevNum()"></span>
+									<div id="box"></div>
 								</div>
 
 							</div>								
 							</div>
 						
 						</div>	
+						
+						<div class="row">
+							<div class="col-xl-4 col-md-5 col-sm-1 text-center">
+								<div class="text-center m-4 fs-1">
+									<p class="rounded-4">500฿</p>
+								</div>
+							</div>
+						</div>
                     </div>
 					  
                     <div class="modal-footer">
@@ -95,6 +115,33 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" 
         crossorigin="anonymous"></script>
-                                  <!-- BS JS 5.2.X -->  
+                                  <!-- BS JS 5.2.X --> 
+
+                    	<!-- Number spinner ByOnline Tutorials --> 
+<script type="text/javascript">
+	var numbers = document.getElementById('box');
+	for(i=0;i<100;i++){
+		var span = document.createElement('span');
+		span.textContent = i;
+		numbers.appendChild(span);
+	}
+	var num = numbers.getElementsByTagName('span');
+	var index = 0;
+
+	function nextNum(){
+		num[index].style.display = 'none';
+		index = (index + 1) % num.length;
+		num[index].style.display = 'initial';
+	}
+	function prevNum(){
+		num[index].style.display = 'none';
+		index = (index - 1 + num.length) % num.length;
+		num[index].style.display = 'initial';
+	}
+
+
+</script>
+
+
 </body>
 </html>
