@@ -81,11 +81,15 @@
 										Winner of the Whitbread Prize</p>
 								</div>
 
-								<div class="container">
+
+							<div class="row">
+								<h5>Quantity</h5>
+								<div class="container-fluid mx-5 mt-2" id="containterborder">
 									<span class="next" onclick="nextNum()"></span>
-									<span class="next" onclick="prevNum()"></span>
+									<span class="prev" onclick="prevNum()"></span>
 									<div id="box"></div>
 								</div>
+							</div>
 
 							</div>								
 							</div>
@@ -120,7 +124,7 @@
                     	<!-- Number spinner ByOnline Tutorials --> 
 <script type="text/javascript">
 	var numbers = document.getElementById('box');
-	for(i=0;i<100;i++){
+	for(i=0;i<10;i++){
 		var span = document.createElement('span');
 		span.textContent = i;
 		numbers.appendChild(span);
