@@ -53,7 +53,7 @@ h4{
 /* https://youtu.be/B9qpQXfGjv4 */
 
 
-.container-fluid
+#containterborder
 {
   position: relative;
   width: 75px;
@@ -63,13 +63,13 @@ h4{
   transition: 0.5s;
 }
 
-.container-fluid:hover
+#containterborder:hover
 {
   width: 120px;
   border: 2px solid rgba(123, 123, 123, 1);
 }
 
-.container-fluid .next
+#containterborder .next
 {
   position: absolute;
   top: 50%;
@@ -86,13 +86,13 @@ h4{
   transition: 0.5s;
 }
 
-.container-fluid:hover .next
+#containterborder:hover .next
 {
   opacity: 1;
 
 }
 
-.container-fluid .prev
+#containterborder .prev
 {
   position: absolute;
   top: 50%;
@@ -109,7 +109,7 @@ h4{
   transition: 0.5s;
 }
 
-.container-fluid:hover .prev{
+#containterborder:hover .prev{
   opacity: 1;
 }
 
@@ -123,7 +123,7 @@ h4{
   line-height: 2.35rem;
   display: none;
   color: black;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 700;
   user-select: none;
   right: 0.0125rem;
