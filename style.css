@@ -23,9 +23,9 @@ h4{
 }
 
 .text-primary1{
-  color: #bcffd8;
+  color: #ffd700;
 }
-
+/**
 .text-primary2{
   color: #d9ffad;
 }
@@ -41,10 +41,35 @@ h4{
 .text-primary5{
   color: #fb735a;
 }
+**/
+.card{
+    transition: 0.5s;
+}
 
-#cardhover:hover{
+.card:hover{
   box-shadow: -3px -3px 26px -6px rgba(0,0,0,0.75);
   -webkit-box-shadow: -3px -3px 26px -6px rgba(0,0,0,0.75);
   -moz-box-shadow: -3px -3px 26px -6px rgba(0,0,0,0.75);
+}
+
+.btn1{
+  height: 45px;
+  width: 35%;
+  border: none;
+  outline: none;
+  background-color: #000000;
+  color: white;
+  font-weight: 500;
+  border-radius: 60px;
   transition: 0.5s;
+}
+
+.btn1:hover{
+  background-color: white;
+  color: black;
+}
+
+.line-through {
+  text-decoration: line-through;
+  color: #de2454;
 }
