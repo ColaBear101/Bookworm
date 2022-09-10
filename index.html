@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!--Animation Scroll-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 <body>
@@ -19,42 +21,46 @@
 		<div class="container">
     	<nav class="navbar navbar-expand-md">
       <!-- Brand -->
-      <img src="image/logo.png" alt="logo" width="60">
+      <img src="image/logo.png" alt="logo" width="60" data-aos="fade-down" data-aos-delay="0">
       <!-- Navbar links -->
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+          <li class="nav-item" data-aos="fade-down" data-aos-delay="50">
+            <a class="nav-link" href="index.html">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Knowledge</a>
+          <li class="nav-item" data-aos="fade-down" data-aos-delay="100">
+            <a class="nav-link" href="bestselllers.html">Best Sellers</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Kid</a>
+          <li class="nav-item" data-aos="fade-down" data-aos-delay="150">
+            <a class="nav-link" href="newreleases.html">New Books</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Interesting</a>
+          <li class="nav-item" data-aos="fade-down" data-aos-delay="200">
+            <a class="nav-link" href="backtoschool.html">School</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+          <li class="nav-item" data-aos="fade-down" data-aos-delay="250">
+            <a class="nav-link" href="recommend.html">Recommend</a>
           </li>          
-         </ul>
-         <i class="fas fa-user"></i> 
-      </div>        
+        </ul>
+          <div class="navbariocn">
+            <button type="button" class="btn positiob-relative" data-aos="fade-down" data-aos-delay="300">
+              <i class="fa fa-shopping-cart"></i><span class="position-absolute top-0 start-100 translate-middle"></span>
+            </button>
+            <button type="button" class="btn positiob-relative" data-aos="fade-down" data-aos-delay="350">
+              <i class="fa fa-heart"></i><span class="position-absolute top-0 start-100 translate-middle"></span>
+            </button>
+            <button type="button" class="btn positiob-relative" data-aos="fade-down" data-aos-delay="400">
+              <i class="fa fa-search"></i><span class="position-absolute top-0 start-100 translate-middle"></span>
+            </button>
+          </div>
+      </div> 
       </nav>
 		</div>	
 
-    <!--Epikbanner-->
+    <!--Epicbanner-->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="image/bookbanner1.png" class="w-100" alt="...">
-          <div class="container">
-            <div class="carousel-caption text-end">
-              <h1>Welcome to Bookworm</h1>
-              <h3>The bookstore that contains lot of knowledge book for you.</h3><br>
-            </div>
-          </div>
+        <div class="carousel-item active" data-aos="fade-up" data-aos-delay="450">
+          <img src="image/bannertest.png" class="w-100" alt="...">
         </div>        
       </div>  
     </div> 
@@ -63,12 +69,12 @@
   <section class="trending">
     <div class="container py-5">
       <div class="row py-5">
-        <div class="col-lg-5 m-auto text-center">
-          <h1>What's Trending</h1>
+        <div class="col-lg-5 m-auto text-center" data-aos="zoom-out" data-aos-delay="500">
+          <h1><i class="fas fa-fire"></i> What's Trending</h1>
         </div>  
       </div>
       <div class="row">
-        <div class="col-lg-3 text-center">
+        <div class="col-lg-3 text-center" data-aos="fade-up" data-aos-delay="550">
           <div class="card border-0 mb-2">
             <div class="card-body">
               <img src="image/trendingbook1.png" class="img-fluid" alt="...">
@@ -81,8 +87,9 @@
           <span class="text-primary1"><i class="fas fa-star"></i></span>
           <h6>What We Owe the Future</h6>
           <p>$32.00</p>
+          <button class="btn2"><i class="fas fa-shopping-cart"></i> Add to cart</button>
         </div>
-        <div class="col-lg-3 text-center">
+        <div class="col-lg-3 text-center" data-aos="fade-up" data-aos-delay="600">
           <div class="card border-0  mb-2">
             <div class="card-body">
               <img src="image/trendingbook2.png" class="img-fluid" alt="...">
@@ -95,8 +102,9 @@
           <span class="text-primary1"><i class="fas fa-star"></i></span>
           <h6>I'm Glad My Mom Died</h6>
           <p>$26.03</p>
+          <button class="btn2"><i class="fas fa-shopping-cart"></i> Add to cart</button>
         </div>
-        <div class="col-lg-3 text-center">
+        <div class="col-lg-3 text-center" data-aos="fade-up" data-aos-delay="650">
           <div class="card border-0  mb-2">
             <div class="card-body">
               <img src="image/trendingbook3.png" class="img-fluid" alt="...">
@@ -109,8 +117,9 @@
           <span class="text-primary1"><i class="fas fa-star"></i></span>
           <h6>The Satanic Verses</h6>
           <p>$17.67</p>
+          <button class="btn2"><i class="fas fa-shopping-cart"></i> Add to cart</button>
         </div>
-        <div class="col-lg-3 text-center">
+        <div class="col-lg-3 text-center" data-aos="fade-up" data-aos-delay="700">
           <div class="card border-0  mb-2">
             <div class="card-body">
               <img src="image/trendingbook4.png" class="img-fluid" alt="...">
@@ -123,33 +132,28 @@
           <span class="text-primary1"><i class="fas fa-star"></i></span>
           <h6>No More Police: A Case for Abolition</h6>
           <p>$17.66</p>
+          <button class="btn2"><i class="fas fa-shopping-cart"></i> Add to cart</button>
         </div>        
       </div>
+      <br><br>
       <div class="row">
-        <div class="col-lg-6 text-center m-auto">
-          <button class="btn1">View List (8 Books)</button>
+        <div class="col-lg-6 text-center m-auto" data-aos="zoom-in">
+          <button class="btn1" type="button" onclick="location.href='trending.html'">View List (8 Books)</button>
         </div>
       </div>
     </div>
   </section>
-  
-  <!--Quote Banner-->
-  <section class="banner">
-    <div class="container">
-      <img class="w-100" src="image/bookbanner2.png" alt="...">
-    </div>
-  </section>
-  
+
   <!--New Releases-->
   <section class="trending">
     <div class="container py-5">
       <div class="row py-5">
-        <div class="col-lg-5 m-auto text-center">
-          <h1>New Releases</h1>
+        <div class="col-lg-5 m-auto text-center" data-aos="zoom-out">
+          <h1><i class="fas fa-plus"></i> New Releases</h1>
         </div>  
       </div>
       <div class="row">
-        <div class="col-lg-3 text-center">
+        <div class="col-lg-3 text-center" data-aos="fade-up">
           <div class="card border-0  mb-2">
             <div class="card-body">
               <img src="image/New Releases1.png" class="img-fluid" alt="...">
@@ -162,8 +166,9 @@
           <span class="text-primary1"><i class="fas fa-star"></i></span>
           <h6>Carrie Soto Is Back</h6>
           <p>$26.04</p>
+          <button class="btn2"><i class="fas fa-shopping-cart"></i> Add to cart</button>
         </div>
-        <div class="col-lg-3 text-center">
+        <div class="col-lg-3 text-center" data-aos="fade-up" data-aos-delay="50">
           <div class="card border-0  mb-2">
             <div class="card-body">
               <img src="image/New Releases2.png" class="img-fluid" alt="...">
@@ -176,8 +181,9 @@
           <span class="text-primary1"><i class="fas fa-star"></i></span>
           <h6>Didn't Nobody Give a Shit What Happened to Carlotta</h6>
           <p>$26.04</p>
+          <button class="btn2"><i class="fas fa-shopping-cart"></i> Add to cart</button>
         </div>
-        <div class="col-lg-3 text-center">
+        <div class="col-lg-3 text-center" data-aos="fade-up" data-aos-delay="100">
           <div class="card border-0  mb-2">
             <div class="card-body">
               <img src="image/New Releases3.png" class="img-fluid" alt="...">
@@ -190,8 +196,9 @@
           <span class="text-primary1"><i class="fas fa-star"></i></span>
           <h6>Other Birds</h6>
           <p>$26.03</p>
+          <button class="btn2"><i class="fas fa-shopping-cart"></i> Add to cart</button>
         </div>
-        <div class="col-lg-3 text-center">
+        <div class="col-lg-3 text-center" data-aos="fade-up" data-aos-delay="150">
           <div class="card border-0  mb-2">
             <div class="card-body">
               <img src="image/New Releases4.png" class="img-fluid" alt="...">
@@ -204,11 +211,13 @@
           <span class="text-primary1"><i class="fas fa-star"></i></span>
           <h6>The Lost Girls of Willowbrook: A Heartbreaking Novel of Survival Based on True History</h6>
           <p>$15.76</p>
+          <button class="btn2"><i class="fas fa-shopping-cart"></i> Add to cart</button>
         </div>        
       </div>
+      <br><br>
       <div class="row">
-        <div class="col-lg-6 text-center m-auto">
-          <button class="btn1">View List (8 Books)</button>
+        <div class="col-lg-6 text-center m-auto" data-aos="zoom-in">
+          <button class="btn1" type="button" onclick="location.href='newreleases.html'">View List (8 Books)</button>
         </div>
       </div>
     </div>
@@ -218,12 +227,12 @@
   <section class="trending">
     <div class="container py-5">
       <div class="row py-5">
-        <div class="col-lg-5 m-auto text-center">
-          <h1>Special offers</h1>
+        <div class="col-lg-5 m-auto text-center" data-aos="zoom-out">
+          <h1><i class="fas fa-tags"></i> Special offers</h1>
         </div>  
       </div>
       <div class="row">
-        <div class="col-lg-3 text-center">
+        <div class="col-lg-3 text-center" data-aos="fade-up" data-aos-delay="0">
           <div class="card border-0  mb-2">
             <div class="card-body">
               <img src="image/special offers1.png" class="img-fluid" alt="...">
@@ -237,8 +246,9 @@
           <h6>Tuesdays with Morrie: An Old Man, a Young Man, and Life's Greatest Lesson</h6>
           <span class="line-through">$17.00</span>
           <span>--&gt; $15.81</span>
+          <button class="btn2"><i class="fas fa-shopping-cart"></i> Add to cart</button>
         </div>
-        <div class="col-lg-3 text-center">
+        <div class="col-lg-3 text-center" data-aos="fade-up" data-aos-delay="50">
           <div class="card border-0  mb-2">
             <div class="card-body">
               <img src="image/special offers2.png" class="img-fluid" alt="...">
@@ -252,8 +262,9 @@
           <h6>Kalyna the Soothsayer</h6>
           <span class="line-through">$29.95</span>
           <span>--&gt; $27.85</span>
+          <button class="btn2"><i class="fas fa-shopping-cart"></i> Add to cart</button>
         </div>
-        <div class="col-lg-3 text-center">
+        <div class="col-lg-3 text-center" data-aos="fade-up" data-aos-delay="100">
           <div class="card border-0  mb-2">
             <div class="card-body">
               <img src="image/special offers3.png" class="img-fluid" alt="...">
@@ -267,8 +278,9 @@
           <h6>The Fault in Our Stars</h6>
           <span class="line-through">$12.99</span>
           <span>--&gt; $12.08</span>
+          <button class="btn2"><i class="fas fa-shopping-cart"></i> Add to cart</button>
         </div>
-        <div class="col-lg-3 text-center">
+        <div class="col-lg-3 text-center" data-aos="fade-up" data-aos-delay="150">
           <div class="card border-0  mb-2">
             <div class="card-body">
               <img src="image/special offers4.png" class="img-fluid" alt="...">
@@ -282,23 +294,18 @@
           <h6>Plant-Based India: Nourishing Recipes Rooted in Tradition</h6>
           <span class="line-through">$30.00</span>
           <span>--&gt; $27.90</span>
+          <button class="btn2"><i class="fas fa-shopping-cart"></i> Add to cart</button>
         </div>        
       </div>
+      <br><br>
       <div class="row">
-        <div class="col-lg-6 text-center m-auto">
-          <button class="btn1">View List (8 Books)</button>
+        <div class="col-lg-6 text-center m-auto" data-aos="zoom-in">
+          <button class="btn1" type="button" onclick="location.href='specialoffers.html'">View List (8 Books)</button>
         </div>
       </div>
     </div>
   </section>
-  
-  <!--School Banner-->
-  <section class="banner">
-    <div class="container">
-      <img class="w-100" src="image/bookbanner3.png" alt="...">
-    </div>
-  </section>
-  
+
   <!--Footer-->
   <footer class="border-top py-5">
     <div class="container">
@@ -307,7 +314,7 @@
           <img src="image/logo.png" height="60" alt="...">
         </div>
         <div class="col-lg-4">
-          <h4>Imformation</h4>
+          <h4><i class="fas fa-id-card"></i> Information</h4>
           <ul class="footer-list">
             <li><a href="#">About us</a></li>
             <li><a href="#">Shipping Policy</a></li>
@@ -317,8 +324,8 @@
           </ul>
         </div>    
         <div class="col-lg-4">
-          <h4>Contact Info</h4>
-          <p>0985768013</p>
+          <h4><i class="fas fa-phone"></i> Contact Info</h4>
+          <p>1</p>
           <p>J466+XP8 ตำบลวัดใหม่ อำเภอเมืองจันทบุรี, จันทบุรี 22000</p>
           <p>S39228@bj.ac.th</p>
         </div>          
@@ -329,6 +336,11 @@
       </div>
     </div>
   </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script> 
   
 </body>
 </html>
