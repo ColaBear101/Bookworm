@@ -1,5 +1,8 @@
 /* https://youtu.be/B9qpQXfGjv4 */
 
+#overflowDisc{
+  max-height: 150px;
+}
 
 #containterborder
 {
@@ -80,4 +83,20 @@
 #box span:nth-child(1)
 {
   display: initial;
+}
+
+#container1{
+  height: 45px;
+  border: none;
+  outline: none;
+  background-color: #000000;
+  color: white;
+  font-weight: 500;
+  border-radius: 60px;
+  transition: 0.5s;
+}
+
+#container1:hover{
+  background-color: white;
+  color: black;
 }
