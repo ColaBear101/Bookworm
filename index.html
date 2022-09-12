@@ -87,8 +87,9 @@
         </div>        
       </div>  
     </div> 
-  
+
   <!--Trending-->
+  <div class="sticky-top alert alert-dismissible" id="liveAlertPlaceholder"></div>
   <section class="trending">
     <div class="container py-5">
       <div class="row py-5">
@@ -100,22 +101,26 @@
         <div class="col-lg-3 text-center" data-aos="fade-up" data-aos-delay="550">
           <div class="card border-0 mb-2">
             <div class="card-body">
-              <img src="image/trend/trendingbook1.png" class="img-fluid" alt="...">
+              <img src="image/trend/trendingbook1.png" class="img-fluid" alt="..." data-bs-toggle="modal" data-bs-target="#trending1">
+              
             </div>
           </div>
+
           <span class="text-primary1"><i class="fas fa-star"></i></span>
           <span class="text-primary1"><i class="fas fa-star"></i></span>
           <span class="text-primary1"><i class="fas fa-star"></i></span>
           <span class="text-primary1"><i class="fas fa-star"></i></span>
           <span class="text-primary1"><i class="fas fa-star"></i></span>
-          <h6>What We Owe the Future</h6>
+          <h6 data-bs-toggle="modal" data-bs-target="#trending1">What We Owe the Future</h6>
           <p>$32.00</p>
           <button class="btn2"><i class="fas fa-shopping-cart"></i> Add to cart</button>
+          <button type="button" class="btn btn-success" id="liveAlertBtn"><i class="fas fa-shopping-cart"></i> Add to cart</button>
         </div>
+
         <div class="col-lg-3 text-center" data-aos="fade-up" data-aos-delay="600">
           <div class="card border-0  mb-2">
             <div class="card-body">
-              <img src="image/trend/trendingbook2.png" class="img-fluid" alt="...">
+              <img src="image/trend/trendingbook2.png" class="img-fluid" alt="..." data-bs-toggle="modal" data-bs-target="#trending2">
             </div>
           </div>
           <span class="text-primary1"><i class="fas fa-star"></i></span>
@@ -123,10 +128,12 @@
           <span class="text-primary1"><i class="fas fa-star"></i></span>
           <span class="text-primary1"><i class="fas fa-star"></i></span>
           <span class="text-primary1"><i class="fas fa-star"></i></span>
-          <h6>I'm Glad My Mom Died</h6>
+          <h6 data-bs-toggle="modal" data-bs-target="#trending2">I'm Glad My Mom Died</h6>
           <p>$26.03</p>
           <button class="btn2"><i class="fas fa-shopping-cart"></i> Add to cart</button>
+          <button type="button" class="btn btn-success" id="liveAlertBtn"><i class="fas fa-shopping-cart"></i> Add to cart</button>
         </div>
+        
         <div class="col-lg-3 text-center" data-aos="fade-up" data-aos-delay="650">
           <div class="card border-0  mb-2">
             <div class="card-body">
@@ -355,10 +362,246 @@
       </div>
       <hr>
       <div class="copyright-text text-center">
+        <p>Disclaimer : We don't really sell these books. This website is for educational purposes.</p>
+      </div>
+      <div class="copyright-text text-center">
         <p>Copyright © 2022</p>
       </div>
     </div>
   </footer>	
+
+
+<!-- Modal trend1-->							
+<div class="modal fade" id="trending1" tabindex="-1" aria-labelledby="trending1Label" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="trending1Label">
+<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+  <ol class="breadcrumb px-3 pt-3">
+    <li class="breadcrumb-item">Book</li>
+    <li class="breadcrumb-item">English</li>
+    <li class="breadcrumb-item active" aria-current="page">Philosophy</li>
+  </ol>
+</nav>
+</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+<div class="modal-body">			
+<div class="row">
+<div class="col-xl-4 col-md-5 col-sm-1 text-center">
+  <img src="image/trend/trendingbook1.png" class="img-thumbnail" alt="...">
+</div>	
+
+<div class="col-xl-8 col-md-7 col-sm-1">
+<div class="container pt-2">
+  <div class="row">
+    <div class="col-12 py-2">
+      <b class="h1">What We Owe the Future</b><div class="fw-light ">William MacAskill (Author)</div>
+    </div>
+  </div>										
+
+  <div class="row w-100">
+    <div class="col-12">
+    <p class="h4 pt-4">Description</p>
+    <div class="overflow-auto mx-1" id="overflowDisc">The fate of the world is in our hands. Humanity’s written history spans only five thousand years. Our yet-unwritten future could last for millions more — or it could end tomorrow. Astonishing numbers of people could lead lives of great happiness or unimaginable suffering, or never live at all, depending on what we choose to do today.
+ 
+      In What We Owe The Future, philosopher William MacAskill argues for longtermism, that idea that positively influencing the distant future is a key moral priority of our time. From this perspective, it’s not enough to reverse climate change or avert the next pandemic. We must ensure that civilization would rebound if it collapsed; counter the end of moral progress; and prepare for a planet where the smartest beings are digital, not human.
+       
+      If we make wise choices today, our grandchildren’s grandchildren will thrive, knowing we did everything we could to give them a world full of justice, hope and beauty.</div>
+    </div>
+  </div>
+
+
+<div class="row my-3 pt-3">
+  <div class="col-xl-3 col-md-6 col-sm-6">
+    <h5 class="mt-3">Price</h5>
+    <div class="text-center h3">$32.00</div>
+  </div>
+
+  <div class="col-xl-4 col-md-6 col-sm-6">
+    <h5 class="mt-3">Quantity</h5>
+    <div class="mx-auto mb-2 pe-2" id="containterborder">
+      <span class="next" onclick="nextNum()"></span>
+      <span class="prev" onclick="prevNum()"></span>
+      <div id="box"></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="row">
+  <p>
+    <div class="col-lg-6 text-center m-auto mb-3">
+      <button class="container" id="container1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        More Book Details
+      </button>
+    </div>
+    </p>
+
+    <div class="collapse p-4" id="collapseExample">
+    <div class="card card-body">
+      <table class="plain centered">
+        <tbody class="word-break">
+        <tr>
+        <th>ISBN-13:</th>
+        <td>9781541618626</td>
+        </tr>
+        <tr>
+        <th>Publisher:</th>
+        <td>Basic Books</td>
+        </tr>
+        <tr> <th>Publication date:</th>
+        <td>08/16/2022</td>
+        </tr>
+        <tr> <th>Pages:</th>
+        <td>352</td>
+        </tr>
+        <tr><th>Product dimensions:</th>
+        <td>5.90(w) x 9.30(h) x 1.30(d)</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    
+</div>
+</div>								
+</div>
+</div>	
+
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+
+        <button type="button" class="btn btn-success" id="liveAlertBtn"><i class="fas fa-shopping-cart"></i> Add to cart</button>
+        <div class="position-absolute top-0 start-50 translate-middle-x" id="liveAlertPlaceholder"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>         
+<!-- Modal trend1-->	
+
+<!-- Modal trend2-->							
+<div class="modal fade" id="trending2" tabindex="-1" aria-labelledby="trending2Label" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="trending2Label">
+<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+  <ol class="breadcrumb px-3 pt-3">
+    <li class="breadcrumb-item">Book</li>
+    <li class="breadcrumb-item">English</li>
+    <li class="breadcrumb-item active" aria-current="page">Memoir</li>
+  </ol>
+</nav>
+</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+<div class="modal-body">			
+<div class="row">
+<div class="col-xl-4 col-md-5 col-sm-1 text-center">
+  <img src="image/trend/trendingbook2.png" class="img-thumbnail" alt="...">
+</div>	
+
+<div class="col-xl-8 col-md-7 col-sm-1">
+<div class="container pt-2">
+  <div class="row">
+    <div class="col-12 py-2">
+      <b class="h1">I'm Glad My Mom Died</b><div class="fw-light ">Jennette McCurdy (Author)</div>
+    </div>
+  </div>										
+
+  <div class="row w-100">
+    <div class="col-12">
+    <p class="h4 pt-4">Description</p>
+    <div class="overflow-auto mx-1" id="overflowDisc">In I’m Glad My Mom Died, Jennette recounts all this in unflinching detail—just as she chronicles what happens when the dream finally comes true. Cast in a new Nickelodeon series called iCarly, she is thrust into fame. Though Mom is ecstatic, emailing fan club moderators and getting on a first-name basis with the paparazzi (“Hi Gale!”), Jennette is riddled with anxiety, shame, and self-loathing, which manifest into eating disorders, addiction, and a series of unhealthy relationships. These issues only get worse when, soon after taking the lead in the iCarly spinoff Sam&Cat alongside Ariana Grande, her mother dies of cancer. Finally, after discovering therapy and quitting acting, Jennette embarks on recovery and decides for the first time in her life what she really wants.
+
+      Told with refreshing candor and dark humor, I’m Glad My Mom Died is an inspiring story of resilience, independence, and the joy of shampooing your own hair.</div>
+    </div>
+  </div>
+
+
+<div class="row my-3 pt-3">
+  <div class="col-xl-3 col-md-6 col-sm-6">
+    <h5 class="mt-3">Price</h5>
+    <div class="text-center h3">$26.03</div>
+  </div>
+
+  <div class="col-xl-4 col-md-6 col-sm-6">
+    <h5 class="mt-3">Quantity</h5>
+    <div class="mx-auto mb-2 pe-2" id="containterborder">
+      <span class="next" onclick="nextNum()"></span>
+      <span class="prev" onclick="prevNum()"></span>
+      <div id="box"></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="row">
+  <p>
+    <div class="col-lg-6 text-center m-auto mb-3">
+      <button class="container" id="container1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        More Book Details
+      </button>
+    </div>
+    </p>
+
+    <div class="collapse p-4" id="collapseExample">
+    <div class="card card-body">
+      <table class="plain centered">
+        <tbody class="word-break">
+        <tr>
+        <th>ISBN-13:</th>
+        <td>9781982185848</td>
+        </tr>
+        <tr>
+        <th>Publisher:</th>
+        <td>Simon & Schuster</td>
+        </tr>
+        <tr> <th>Publication date:</th>
+        <td>08/09/2022</td>
+        </tr>
+        <tr> <th>Pages:</th>
+        <td>320</td>
+        </tr>
+        <tr><th>Product dimensions:</th>
+        <td>6.10(w) x 9.10(h) x 1.30(d)</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    
+</div>
+</div>								
+</div>
+</div>	
+
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+
+        <button type="button" class="btn btn-success" id="liveAlertBtn"><i class="fas fa-shopping-cart"></i> Add to cart</button>
+        <div class="position-absolute top-0 start-50 translate-middle-x" id="liveAlertPlaceholder"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>         
+<!-- Modal trend2-->	
+
+<!-- BS JS 5.2.X -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" 
+crossorigin="anonymous"></script>
+<!-- BS JS 5.2.X --> 
 
 <!-- Number spinner By Online Tutorials --> 
 <script type="text/javascript">
