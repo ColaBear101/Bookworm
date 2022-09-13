@@ -39,6 +39,12 @@
    <!--Animation Scroll-->  
 </head>
 <body>
+  <div class="container mt-5 px-5 mx-auto text-center fixed-top">
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        เว็บไซต์นี้สร้างขึ้นเพื่อการเรียนรู้และฝึกการพัฒนาเว็บแอพพลิเคชั่นเป็นส่วนหนึ่งของรายวิชาคอมพิวเตอร์ เพื่อการเรียนรู้เท่านั้น
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  </div>
     <!--Navbar-->  
 		<div class="container">
     	<nav class="navbar navbar-expand-md">
@@ -213,41 +219,100 @@
     </div>
   </section>
 
+
   <!--Footer-->
   <footer class="border-top py-5">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-4 px-auto">
           <img src="image/logo.png" height="60" alt="...">
         </div>
         <div class="col-lg-4">
-          <h4>Information</h4>
-          <ul class="footer-list">
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Shipping Policy</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
+          <h4><i class="bi bi-geo-alt-fill"></i></i> Location</h4>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d973.3838861406597!2d102.1106076!3d12.6128326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310481846e48d509%3A0xa00e312f6a259ef4!2z4LmC4Lij4LiH4LmA4Lij4Li14Lii4LiZ4LmA4Lia4LiN4LiI4Lih4Lij4Liy4LiK4Li54LiX4Li04LioIOC4iOC4seC4h-C4q-C4p-C4seC4lOC4iOC4seC4meC4l-C4muC4uOC4o-C4tQ!5e0!3m2!1sth!2sth!4v1663033538057!5m2!1sth!2sth" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>    
         <div class="col-lg-4">
-          <h4>Contact Info</h4>
-          <p>09</p>
-          <p>J466+XP8 ตำบลวัดใหม่ อำเภอเมืองจันทบุรี, จันทบุรี 22000</p>
-          <p>S39228@bj.ac.th</p>
+          <h4><i class="fas fa-phone"></i> Contact Info</h4>
+          <div class="row">039-311-170 </div>
+          <div class="row"> เลขที่ 10 ถนนศรียานุสรณ์ ตำบลวัดใหม่ อำเภอเมือง จังหวัดจันทบุรี รหัสไปรษณีย์ 22000</div>
+          <div class="row">S39225@bj.ac.th</div>
+          <div class="row">S39228@bj.ac.th</div>
         </div>          
       </div>
       <hr>
       <div class="copyright-text text-center">
+        <p>Disclaimer : This website was created for learning and practicing web application development as part of a computer course. for learning only</p>
+      </div>
+      <div class="copyright-text text-center">
         <p>Copyright © 2022</p>
       </div>
     </div>
-  </footer>
+    </div>
+  </footer>	
   
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script> 
+<!-- BS JS 5.2.X -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" 
+crossorigin="anonymous"></script>
+<!-- BS JS 5.2.X --> 
+
+<!-- Number spinner By Online Tutorials --> 
+<script type="text/javascript">
+  var numbers = document.getElementById('box');
+  for(i=0;i<11;i++){
+    var span = document.createElement('span');
+    span.textContent = i;
+    numbers.appendChild(span);
+  }
+  var num = numbers.getElementsByTagName('span');
+  var index = 0;
+
+  function nextNum(){
+    num[index].style.display = 'none';
+    index = (index + 1) % num.length;
+    num[index].style.display = 'initial';
+  }
+  function prevNum(){
+    num[index].style.display = 'none';
+    index = (index - 1 + num.length) % num.length;
+    num[index].style.display = 'initial';
+  }
+
+
+</script>
+    <!-- Number spinner By Online Tutorials --> 
+
+
+    <!-- Alertbox shopping-->
+<script>
+const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+
+const alert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible fade show" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+}
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    alert('Your book has been added to the cart !', 'success')
+  })
+}
+</script>		
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script> 
 
 </body>
 </html>
+
